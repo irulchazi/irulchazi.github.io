@@ -1,10 +1,13 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "Server": ["server"],
+    "Service": ["service"],
+    "Testing": ["testing"],
+    "Tools": ["tools"]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "server": {
+    "Database": ["mysql", "tools"],
+    "Operating System": ["service"],
+    "Web Server": ["testing"]
   }
 }

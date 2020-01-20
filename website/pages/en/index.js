@@ -60,14 +60,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        {/* <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} /> */}
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href={docUrl('doc1.html')}>Server</Button>
-            <Button href={docUrl('doc2.html')}>Service</Button>
-            <Button href="#try">Testing</Button>
-            <Button href={docUrl('doc2.html')}>Tools</Button>
+            <Button href={docUrl('server.html')}>Server</Button>
+            <Button href={docUrl('service.html')}>Service</Button>
+            <Button href={docUrl('testing.html')}>Testing</Button>
+            <Button href={docUrl('tools.html')}>Tools</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -126,82 +125,6 @@ class Index extends React.Component {
         ]}
       </Block>
     );
-
-    // const Description = () => (
-    //   <Block background="dark">
-    //     {[
-    //       {
-    //         content:
-    //           'This is another description of how this project is useful',
-    //         image: `${baseUrl}img/undraw_note_list.svg`,
-    //         imageAlign: 'right',
-    //         title: 'Description',
-    //       },
-    //     ]}
-    //   </Block>
-    // );
-
-    // const LearnHow = () => (
-    //   <Block background="light">
-    //     {[
-    //       {
-    //         content:
-    //           'Each new Docusaurus project has **randomly-generated** theme colors.',
-    //         image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-    //         imageAlign: 'right',
-    //         title: 'Randomly Generated Theme Colors',
-    //       },
-    //     ]}
-    //   </Block>
-    // );
-
-    // const Features = () => (
-    //   <Block layout="fourColumn">
-    //     {[
-    //       {
-    //         content: 'This is the content of my feature',
-    //         image: `${baseUrl}img/undraw_react.svg`,
-    //         imageAlign: 'top',
-    //         title: 'Feature One',
-    //       },
-    //       {
-    //         content: 'The content of my second feature',
-    //         image: `${baseUrl}img/undraw_operating_system.svg`,
-    //         imageAlign: 'top',
-    //         title: 'Feature Two',
-    //       },
-    //     ]}
-    //   </Block>
-    // );
-
-    // const Showcase = () => {
-    //   if ((siteConfig.users || []).length === 0) {
-    //     return null;
-    //   }
-
-    //   const showcase = siteConfig.users
-    //     .filter(user => user.pinned)
-    //     .map(user => (
-    //       <a href={user.infoLink} key={user.infoLink}>
-    //         <img src={user.image} alt={user.caption} title={user.caption} />
-    //       </a>
-    //     ));
-
-    //   const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
-
-    //   return (
-    //     <div className="productShowcaseSection paddingBottom">
-    //       <h2>Who is Using This?</h2>
-    //       <p>This project is used by all these people</p>
-    //       <div className="logos">{showcase}</div>
-    //       <div className="more-users">
-    //         <a className="button" href={pageUrl('users.html')}>
-    //           More {siteConfig.title} Users
-    //         </a>
-    //       </div>
-    //     </div>
-    //   );
-    // };
 
     return (
       <div>
