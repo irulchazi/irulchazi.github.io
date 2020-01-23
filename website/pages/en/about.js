@@ -20,12 +20,6 @@ function Help(props) {
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
   const experienceLinks = [
-    // {
-    //   content: `Learn more using the [documentation on this site.](${docUrl(
-    //     'doc1.html',
-    //   )})`,
-    //   title: 'Browse Docs',
-    // },
     {
       content: 'Role: DevOps Engineer' + '\n' + '\n' +
       'Period: Jan 2019 - Jan 2020' + '\n' + '\n' +
@@ -66,12 +60,61 @@ function Help(props) {
     },
   ];
 
-  const certificationLinks = [
+  const certificationCSCULinks = [
     {
       content: `Issued by: [EC-Council](https://www.eccouncil.org/)` + '\n' + '\n' +
       'Issued Date: October 29, 2019' + '\n' + '\n' +
       '- [Click this for Certification Detail](https://drive.google.com/file/d/1JLfloTrOn3TdDwz9K8-F49ZLI2-1-H7K/view)',
       title: 'Certified Secure Computer User (CSCU)',
+    },
+  ];
+
+  const certificationMicrosoftLinks = [
+    {
+      content: `Issued by: [Microsoft Virtual Academy](https://docs.microsoft.com/en-us/learn/)` + '\n' + '\n' +
+      'Issued Date: May 19, 2015' + '\n' + '\n' +
+      '- [Click this for Certification Detail](https://drive.google.com/file/d/1G7xAfXJkDB-u_A5NCoQK0w_b5CRz4FHS/view)',
+      title: 'Microsoft Networking Fundamentals',
+    },
+  ];
+
+  const projectLinks1 = [
+    {
+      content: 'Role: System Analyst' + '\n' + '\n' +
+      'Description: Building e-commerce and integrating accros several system' + '\n' + '\n' +
+      '**<a href="https://www.idmarco.com/" target="_blank">See Project</a>**',
+      title: '[IDMarco](https://www.idmarco.com/)',
+    },
+    {
+      content: 'Role: System Implementator' + '\n' + '\n' +
+      'Description: Implementation coworking space management system using Nexudus platform.' + '\n' + '\n' +
+      '**<a href="https://nexudus.com/" target="_blank">See Project</a>**',
+      title: 'Nexudus Implementator',
+    },
+    {
+      content: 'Role: System Analyst' + '\n' + '\n' +
+      'Description: Creating company profile website for Uptown coworking space.' + '\n' + '\n' +
+      '**<a href="https://uptown.id/" target="_blank">See Project</a>**',
+      title: 'Uptown',
+    },
+  ];
+
+  const projectLinks2 = [
+    {
+      content: 'Role: System Analyst' + '\n' + '\n' +
+      'Description: Creating middleware to pull data from Suprema hardware using biostar API and process the data to coworking space management system.' + '\n' + '\n' +
+      '**<a href="https://www.supremainc.com/en/main.asp" target="_blank">See Project</a>**',
+      title: 'Suprema Middleware Integration',
+    },
+    {
+      content: 'Role: System Analyst' + '\n' + '\n' +
+      'Description: Design API stock, price, and cronjob for an e-commerce system.' + '\n' + '\n' +
+      '**<a href="https://toktok.id/" target="_blank">See Project</a>**',
+      title: 'TokTok',
+    },
+    {
+      content: 'Will be updated later...',
+      title: 'And Many More...',
     },
   ];
 
@@ -91,7 +134,12 @@ function Help(props) {
           <GridBlock contents={educationLinks} layout="twoColumn" />
           <h1>Certification</h1>
           <hr></hr>
-          <GridBlock contents={certificationLinks} layout="twoColumn" />
+          <GridBlock contents={certificationCSCULinks} layout="oneColumn" />
+          <GridBlock contents={certificationMicrosoftLinks} layout="oneColumn" />
+          <h1>Project Accomplishments</h1>
+          <hr></hr>
+          <GridBlock contents={projectLinks1} layout="threeColumn" />
+          <GridBlock contents={projectLinks2} layout="threeColumn" />
         </div>
       </Container>
     </div>
