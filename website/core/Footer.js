@@ -79,7 +79,7 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Contact Me</h5>
-            {/* <a href={`${this.props.config.baseUrl}blog`}>Blog</a> */}
+            <a href={`${this.props.config.baseUrl}about.html`}>About Me</a>
             <a href="tel:+6283812711745">Call Me</a>
             <a href="mailto:irulchazi@gmail.com">Send Me an Email</a>
             <a
