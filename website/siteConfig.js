@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Pandora Doc',
-  tagline: '“The only true wisdom is in knowing you know nothing.” -Socrates',
+  tagline: '“The only true wisdom is in knowing you know nothing.”',
   url: 'https://irulchazi.github.io',
   baseUrl: '/',
   projectName: 'irulchazi.github.io',
