@@ -96,7 +96,7 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>What is Pandora Doc?</h2>
+        <h2>What is Pandora?</h2>
         <MarkdownBlock>
           This is just an ordinary website that contains server documentation,
           external service that made our life easier, testing framework, and related tools that I used on a daily basis.
